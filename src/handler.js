@@ -202,7 +202,7 @@ const deleteBookByIdHandler = (request, h) => {
     }
     const response = h.response({
         status: 'fail',
-        message: 'Gagal menghapus buku. Id tidak ditemukan',
+        message: 'Buku gagal dihapus. Id tidak ditemukan',
     });
     response.code(404);
     return response;
@@ -211,4 +211,4 @@ const deleteBookByIdHandler = (request, h) => {
 
 
 
-module.exports = { addBookHandler, getAllBooksHandler, getBookByIdHandler, deleteBookByIdHandler, editBookByIdHandler }
+module.exports = { addBookHandler, getAllBooksHandler, getBookByIdHandler, deleteBookByIdHandler, editBookByIdHandler };
